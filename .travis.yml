@@ -2,14 +2,13 @@ sudo: required
 services:
   - docker
 
-before_install:
-  - echo "$HEROKU_PASSWORD" | docker login -u _ --password-stdin registry.heroku.com
-
 script:
   - wget https://raw.githubusercontent.com/blang/latex-docker/master/latexdockercmd.sh
   - chmod +x latexdockercmd.sh
   - ./latexdockercmd.sh latexmk -pdf -outdir=./_build
 
+before_deploy:
+  - echo "$HEROKU_PASSWORD" | docker login -u _ --password-stdin registry.heroku.com
 deploy:
   provider: script
   script:
