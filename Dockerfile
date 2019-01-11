@@ -8,6 +8,6 @@ COPY nginx.conf /etc/nginx/nginx.conf
 COPY landing/ /usr/share/nginx/html/
 
 # Copy CV in PDF to docker image
-COPY ["Ignacio Glinsek - CV.pdf", "/usr/share/nginx/html/Ignacio_Glinsek-CV.pdf"]
+COPY ["_build/Ignacio_Glinsek-CV.pdf", "/usr/share/nginx/html/Ignacio_Glinsek-CV.pdf"]
 
 CMD /bin/sh -c "envsubst '\$PORT' < /etc/nginx/conf.d/default.conf.template > /etc/nginx/conf.d/default.conf" && nginx -g 'daemon off;'
