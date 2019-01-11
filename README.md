@@ -1,5 +1,5 @@
 # Ignacio Glinsek CV
-![](https://img.shields.io/website-up-down-green-red/https/nachoglinsek.com.svg?label=Ignacio&nbsp;Glinsek&nbsp;CV)
+[![](https://img.shields.io/website-up-down-green-red/https/nachoglinsek.me.svg?label=Ignacio&nbsp;Glinsek&nbsp;CV)](https://nachoglinsek.me/Ignacio_Glinsek-CV.pdf)
 [![](https://img.shields.io/github/license/nakioman/cv.svg)](https://github.com/nakioman/cv/blob/master/LICENSE)
 
 ----
