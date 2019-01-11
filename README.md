@@ -4,3 +4,5 @@
 
 ----
 This repository contains my curriculum vitae to keep track of it changes as well as automatic deploy of the changes to [Heroku](http://heroku.com/)
+
+[Curriculum Vitae](http://bit.ly/2RIknVp)
