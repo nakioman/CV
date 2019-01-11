@@ -729,15 +729,23 @@
 				text-decoration: none;
 				position: relative;
 				display: block;
-				width: 3.75em;
-				height: 3.75em;
+				width: 4em;
+				height: 4em;
 				border-radius: 100%;
 				border: solid 1px #c8cccf;
-				line-height: 3.75em;
+				line-height: 4em;
 				overflow: hidden;
 				text-align: center;
-				text-indent: 3.75em;
-				white-space: nowrap;
+				text-indent: 4em;
+				white-space: nowrap;				
+			}
+
+			ul.icons li a span {
+				position: relative;
+				display: block;
+				text-indent: 0;
+				font-size: 0.8rem;
+				margin-top: 5px;
 			}
 
 				ul.icons li a:before {
@@ -764,7 +772,7 @@
 					left: 0;
 					width: inherit;
 					height: inherit;
-					font-size: 1.85rem;
+					font-size: 2.5rem;
 					line-height: inherit;
 					text-align: center;
 					text-indent: 0;
