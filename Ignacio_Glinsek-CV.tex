@@ -1,0 +1,107 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,danish]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\usepackage[urw-garamond]{mathdesign}           % use garamond fonts
+\usepackage[T1]{fontenc}                        % use garamond font encoding
+\usepackage[english]{babel}
+
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{black}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.85]{geometry}
+
+\usepackage[unicode]{hyperref}                  % to use hyperlinks
+\usepackage{xcolor}                             % better colors
+\usepackage{color}                              % syntactic sugar
+
+% personal data
+\name{Roberto Ignacio}{Glinsek}
+\phone[mobile]{+54~(911)~6743~5382}                   
+\email{iglinsek@gmail.com}                              
+\homepage{nachoglinsek.me}                         
+\social[linkedin]{ignacioglinsek}                    
+\social[github]{nakioman}                            
+\extrainfo{Argentinian, Slovenian}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Summary}
+\begin{itemize}
+  \item	15 years of software development experience.
+  \item Excellent programming skills in \textbf{.NET}, \textbf{TypeScript} and \textbf{JavaScript},
+        knowledgeable in \textbf{Python}, \textbf{Node} and \textbf{Docker}.
+  \item	Experienced in \textbf{distributed applications}, \textbf{multi-threading} and \textbf{microservices}.
+  \item	Strong technical, analytical and decision-making skills for problem identification and resolution.
+  \item	Demonstrated technical leadership, strong interpersonal and communication skills.
+  \item	Highly motivated and self-directed with the ability to work independently and as part of a team on multiple projects simultaneously.
+  \item	Good knowledge of \textbf{new technologies} in general.
+  \item Proven experience in \textbf{AWS} and \textbf{Azure} cloud services.
+
+\end{itemize}
+
+\section{Professional Experience}
+\cventry{10/2017 -- Present}{Lead Application Engineer}{Rise Interactive}{}{}{Maintein and develop new features for the
+  \httplink[Connex Platform]{https://www.riseinteractive.com/connex} as well as mentor developers into new technologies, my achievements include:
+  \begin{itemize}
+    \item	Migrate Microsoft MVC application to SPA using React, Redux and Sagas
+    \item	Migrate Web Api using .NET Framework to .NET Core
+    \item	Start using Docker containers to deploy our platform to AWS
+    \item	Set and follow coding standards and best practices
+  \end{itemize}}
+\cventry{03/2017 -- 10/2017}{Full Stack Senior Developer}{SouthWorks}{}{}{Worked as a Microsoft vendor in different Azure projects:
+  \begin{itemize}
+    \item Maintein Azure Media Services portal
+    \item Implement new features in the Azure Media Services portal
+    \item Build from the ground up a video editor in ReactJS for the portal.
+  \end{itemize}}
+\cventry{06/2009 -- 03/2017}{Technical Leader}{AXA Assistance}{}{}{I was in charge of design, develop and lead a group of people that implement several in-house applications, my achievements included:
+  \begin{itemize}
+    \item Migrate our source control history from TFS to Git without loosing any commit in the history.
+    \item Implement a software solution to automate the car rental and towing services manual operations, allowing the company to deliver faster operations at half the cost.
+    \item Migrate our software from Windows Server 2003 to Windows Server 2012 R2.
+    \item Started migrating our in house infrastructure to SaaS in Azure.
+    \item Give in house talks throught the company about new technologies.
+  \end{itemize}}
+\cventry{04/2008 -- 05/2009}{Senior Software Developer}{Globant}{}{}{I worked as a consultant in various projects using mainly .NET, JavaScript and FLEX}
+\cventry{04/2007 -- 04/2008}{Software Developer}{Tata Conltancy Services}{}{}{I worked on different .NET projects using ASP.NET techonologies}
+
+\section{Studies}
+\cventry{2001}{Computer Technician applied to Industrial production processes}{Maria Reina Institute}{Buenos Aires, Argentina}{}{}
+\cventry{2004 -- 2010}{Computer Science}{University of Buenos Aires}{Buenos Aires, Argentina}{}{}
+
+\section{Certifications}
+\cventry{2013}{MS-10776 -- Developing Microsoft SQL Server 2012 Databases}{EXO Training}{Buenos Aires, Argentina}{}{}
+\cventry{2012}{MS2933 -- Developing Business Process and Integration Solutions Using BizTalk}{EXO Training}{Buenos Aires, Argentina}{}{}
+\cventry{2012}{ITIL Foundation Certificate in IT Service Management}{ITIL}{Buenos Aires, Argentina}{}{Registration number: 4638218}
+\cventry{2009}{Microsoft Certified Professional}{Microsoft}{Buenos Aires, Argentina}{}{\httplink[Transcript ID: 877570, Access Code: IgnacioGlinsek]{https://mcp.microsoft.com/authenticate/validatemcp.aspx}}
+\cventry{2006}{Security Seminar in Web applications and servers}{ArCERT}{Buenos Aires, Argentina}{}{}
+
+\section{Languages}
+\cvitem{English}{Fluent}
+\cvitem{Spanish}{Native}
+
+\section{Interests}
+\cvlistitem{Gaming}
+\cvlistitem{Reading}
+\cvlistitem{Travel}
+
+\end{document}
+%% end of file `template.tex'.
