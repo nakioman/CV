@@ -4,6 +4,9 @@ FROM nginx:stable-alpine
 COPY default.conf.template /etc/nginx/conf.d/default.conf.template
 COPY nginx.conf /etc/nginx/nginx.conf
 
+# Copy landing page to docker image
+COPY landing/ /usr/share/nginx/html/
+
 # Copy CV in PDF to docker image
 COPY ["Ignacio Glinsek - CV.pdf", "/usr/share/nginx/html/Ignacio_Glinsek-CV.pdf"]
 
