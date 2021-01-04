@@ -1,9 +1,9 @@
 # Ignacio Glinsek CV
 
-[![](https://img.shields.io/website-up-down-green-red/https/glinsekcv.herokuapp.com.svg?label=Ignacio&nbsp;Glinsek)](https://nachoglinsek.me/)
-[![download CV](https://img.shields.io/badge/download-PDF-brightgreen.svg)](http://bit.ly/2RIknVp)
+[![](https://img.shields.io/website-up-down-green-red/https/nachoglinsek.me.svg?label=Ignacio&nbsp;Glinsek)](https://nachoglinsek.me/)
+[![download CV](https://img.shields.io/badge/download-PDF-brightgreen.svg)](https://nachoglinsek.me/Ignacio_Glinsek-CV.pdf)
 [![](https://img.shields.io/github/license/nakioman/cv.svg)](https://github.com/nakioman/cv/blob/master/LICENSE)
-[![Build Status](https://travis-ci.org/nakioman/CV.svg?branch=master)](https://travis-ci.org/nakioman/CV)
+[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fnakioman%2Fcv%2Fbadge%3Fref%3Dmaster&style=flat)](https://actions-badge.atrox.dev/nakioman/cv/goto?ref=master)
 
 ----
 This repository contains the Curriculum Vitae of Ignacio Glinsek. The
