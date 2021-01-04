@@ -1,0 +1,43 @@
+name: CI
+on: [push]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Compile LaTeX document
+        uses: xu-cheng/latex-action@v2
+        with:
+          root_file: Ignacio_Glinsek-CV.tex
+      - name: Check pdf files
+        run: |
+          set -e
+          file Ignacio_Glinsek-CV.pdf | grep -q ' PDF ' 
+      - uses: actions/upload-artifact@v2
+        with:
+          name: cv
+          path: Ignacio_Glinsek-CV.pdf
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build_latex
+    if: github.ref == 'refs/heads/master'
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      - uses: actions/download-artifact@v2
+        with:
+          name: cv
+          path: pdf
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.PAGES_TOKEN }}
+          BRANCH: master
+          BASE_BRANCH: master
+          FOLDER: ./pdf
+          REPOSITORY_NAME:  nakioman/nakioman.github.io
+          CLEAN: false
