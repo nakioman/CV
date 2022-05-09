@@ -24,7 +24,7 @@ jobs:
     if: github.ref == 'refs/heads/master'
     steps:
       - name: checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           persist-credentials: false
       - uses: actions/download-artifact@v2
@@ -32,12 +32,10 @@ jobs:
           name: cv
           path: pdf
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@3.7.1
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          ACCESS_TOKEN: ${{ secrets.PAGES_TOKEN }}
-          BRANCH: master
-          BASE_BRANCH: master
-          FOLDER: ./pdf
-          REPOSITORY_NAME:  nakioman/nakioman.github.io
+          branch: master
+          folder: ./pdf
+          repository-name:  nakioman/nakioman.github.io
+          ssh-key: ${{ secrets.DEPLOY_KEY }}
           CLEAN: false
